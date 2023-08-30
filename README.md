@@ -135,3 +135,5 @@ The extraction tool is [`i18next-parser`](https://www.npmjs.com/package/i18next-
 To workaround this, specify static values in `i18n.ts` file under any top-level directory below `src/app`. For example, `src/app/Settings/i18n.ts`.
 
 Refer to [LOCALIZATION.md](LOCALIZATION.md) for more details about our localization framework.
+
+***TAKE OUT AT THE END***
