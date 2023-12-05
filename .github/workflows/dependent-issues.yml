@@ -21,6 +21,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - uses: z0al/dependent-issues@v1
         env:
