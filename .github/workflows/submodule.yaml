@@ -46,4 +46,9 @@ jobs:
         git add --all
         git_hash="$(git rev-parse --short :src/main/webui)"
         git commit -S -m "build(webui): update submodule to $git_hash" || echo "No changes to commit"
-        git push
+    - name: Open Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        title: "build(submodule): Update submodule"
+        base: ${{ github.ref_name }}
+        labels: auto-merge
